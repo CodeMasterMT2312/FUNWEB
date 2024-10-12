@@ -160,7 +160,7 @@ CantidadProductos("mouse",2)
 // Retorno
 
 function calcularPrecioTotal(precio,cantidad){
-    return precio * cantidad;
+    return `la cantidad Total es: ${precio * cantidad}`;
 }
 console.log(calcularPrecioTotal(100,2))
 
@@ -170,7 +170,6 @@ const ObtenerNombreProducto= (nombre) =>{
     let ArrayProductos = productosDisponibles
     return ArrayProductos.find(producto => producto.nombre === nombre)
 }
-
 console.log(ObtenerNombreProducto("Soporte de Controles Cable Guy Sonic"));
 
 
